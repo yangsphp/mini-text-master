@@ -8,7 +8,7 @@ BUG更新
 
 效果图
 =======
-![Image text](https://github.com/yangsphp/mini-text-master/blob/master/screenshot/1.jpg)
+![Image text](https://github.com/yangsphp/mini-text-master/blob/master/screenshot/1.png)
 
 安装
 =======
