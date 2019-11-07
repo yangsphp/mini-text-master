@@ -1,6 +1,6 @@
 mini-text-master
 =======
-![image](https://img2018.cnblogs.com/i-beta/1509251/201911/1509251-20191107110426925-222236166.png)
+![image](https://github.com/yangsphp/mini-text-master/screenshot/1.png)
 
 BUG更新
 =======
