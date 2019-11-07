@@ -1,10 +1,12 @@
 mini-text-master
 =======
-![Image text](https://github.com/yangsphp/mini-text-master/blob/master/screenshot/1.png)
-
 BUG更新
 =======
  * 2019-11-07 14:54 修复打开一个文件后，点击新建问题。
+
+效果图
+=======
+![Image text](https://github.com/yangsphp/mini-text-master/blob/master/screenshot/1.png)
 
 安装
 =======
