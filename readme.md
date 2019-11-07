@@ -1,6 +1,6 @@
 mini-text-master
 =======
-![image](https://github.com/yangsphp/mini-text-master/screenshot/1.png)
+![image](https://github.com/yangsphp/mini-text-master/blob/master/screenshot/1.png)
 
 BUG更新
 =======
