@@ -14,10 +14,11 @@ import time
 
 ''' 点击触发新建 '''
 def newBuild():
-    global md5Str
+    global md5Str, nowOperateFilePath
     # 清空Text内容
     text.delete(index, tk.END)
     md5Str = md5("")
+    nowOperateFilePath = ""
     # 设置窗口标题
     setWindowTitle()
     # 设置行列号
@@ -177,7 +178,7 @@ def findTextStr(strs):
             text.tag_add("find", startIndex, lastIndex)
             startIndex = lastIndex
             count += 1
-        text.tag_config("find", background = "blue", foreground = "#fff")
+        text.tag_config("find", background = "#0088A8", foreground = "#fff")
         if count == 0:
             tk.messagebox.showwarning(title = "提示", message = "没有找到内容")
 
@@ -214,7 +215,7 @@ def toFind():
     
     tk.Label(findDialog, text = "  ").grid(row = 0, column=2)
    
-    findDialog.attributes("-topmost", -1)
+    findDialog.attributes("-topmost", 1)
     findDialog.protocol("WM_DELETE_WINDOW", lambda : callCloseFindDialog(findDialog))
     findDialog.mainloop()
 
@@ -263,8 +264,8 @@ y = int((screen_height - win_height) / 2)
 
 window.title("无标题* - 记事本")
 window.geometry("%sx%s+%s+%s" % (win_width, win_height, x, y))
-
-window.iconbitmap(r"G:/记事本/icon.ico")
+# 最好用绝对路径
+window.iconbitmap("G:/记事本/icon.ico")
 
 ''' 全局变量'''
 # 保存文件类型
@@ -281,6 +282,7 @@ index = 1.0
 textFont = 13
 ''' md5加密后的内容, 初始化md5内容'''
 md5Str = md5("")
+
 
 
 
