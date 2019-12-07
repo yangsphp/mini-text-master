@@ -199,7 +199,6 @@ def toFind():
     fX = int((screen_width - fW) / 2)
     fY = int((screen_height - fW) / 2)
     findDialog.geometry("%sx%s+%s+%s" %(fW, fH, fX, fY))
-    findDialog.attributes("-toolwindow", 2)
     
     tk.Label(findDialog, text = "查找：").grid(row = 0, column=0)
     fVar = tk.StringVar()
@@ -215,7 +214,8 @@ def toFind():
     
     tk.Label(findDialog, text = "  ").grid(row = 0, column=2)
    
-    findDialog.attributes("-topmost", 1)
+    findDialog.grab_set()
+    findDialog.focus_set()
     findDialog.protocol("WM_DELETE_WINDOW", lambda : callCloseFindDialog(findDialog))
     findDialog.mainloop()
 
@@ -264,8 +264,6 @@ y = int((screen_height - win_height) / 2)
 
 window.title("无标题* - 记事本")
 window.geometry("%sx%s+%s+%s" % (win_width, win_height, x, y))
-# 最好用绝对路径
-window.iconbitmap("G:/记事本/icon.ico")
 
 ''' 全局变量'''
 # 保存文件类型
@@ -283,7 +281,8 @@ textFont = 13
 ''' md5加密后的内容, 初始化md5内容'''
 md5Str = md5("")
 
-
+# 最好用绝对路径
+window.iconbitmap(initDir + "/icon.ico")
 
 
 ''' 设置菜单 '''
