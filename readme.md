@@ -8,7 +8,7 @@ BUG更新
 
 效果图
 =======
-![Image text](screenshot/1.png)
+![](screenshot/1.png)
 
 安装
 =======
